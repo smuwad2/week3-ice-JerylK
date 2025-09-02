@@ -13,59 +13,68 @@
     <div class="container mt-5">
         <form>
             <div class="row g-3">
-                <div>
-                    <label for="fullName">Full Name</label>
-                    <input type="text" id="fullName">
+                <div class="col-md-6 col-lg-4">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="fullName">
+                    </div>
                 </div>
+                
 
                 <!-- Email -->
-                <div>
-                    <label for="email">Email address</label>
-                    <input type="email" id="email">
+                <div class="col-md-6 col-lg-4">
+                    <label for="email" class="form-label">Email address</label>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" id="email">
+                    </div>
                 </div>
 
                 <!-- Gender -->
-                <div>
-                    <label>Gender</label>
-                    <div>
-                        <input type="radio" name="gender" id="male" value="male">
-                        <label for="male">Male</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="gender" id="female" value="female">
-                        <label for="female">Female</label>
+                <div class="col-md-6 col-lg-4">
+                    <label for="gender" class="form-label">Gender</label>
+                    <div class="input-group mb-3">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="male">
+                            <label class="form-check-label" for="inlineRadio1">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="female">
+                            <label class="form-check-label" for="inlineRadio2">Female</label>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Country -->
-                <div>
-                    <label for="country">Country</label>
-                    <select id="country">
+                <div class="col-md-6 col-lg-4">
+                    <label for="country" class="form-label">Country</label>
+                    <select class="form-select mb-3" id="country">
                         <option selected>Select your country</option>
-                        <option>USA</option>
-                        <option>Singapore</option>
-                        <option>UK</option>
+                        <option value="usa">USA</option>
+                        <option value="singapore">Singapore</option>
+                        <option value="uk">UK</option>
                     </select>
                 </div>
 
                 <!-- Subscribe -->
-                <div>
-                    <div class="mt-4">
-                        <input type="checkbox" id="subscribe">
-                        <label for="subscribe">
+                <div class="col-md-12 col-lg-4">
+                    <div class="form-check mt-4">
+                        <input class="form-check-input" type="checkbox" id="subscribe">
+                        <label class="form-check-label" for="subscribe">
                             Subscribe to newsletter
                         </label>
                     </div>
                 </div>
 
                 <!-- Message -->
-                <div>
-                    <label for="message">Message</label>
-                    <textarea id="message" rows="4"></textarea>
+                <div class="col-12">
+                    <label for="message" form-label>Message</label>
+                    <div class="input-group mt-3">
+                            <textarea class="form-control" id="message" rows="4"></textarea>
+                    </div>
                 </div>
-
+            
                 <!-- Submit Button -->
-                <div>
+                <div class="col-12 text-center">
                     <button type="submit" class="btn btn-primary mt-3">Submit</button>
                 </div>
             </div>
